@@ -63,6 +63,7 @@ Ensured label distribution is approximately balanced
 
 <img width="1861" height="373" alt="image" src="https://github.com/user-attachments/assets/8e4d95bc-f066-40a9-b934-a0528005de1b" />
 
+
 2.EXPLORATORY DATA ANALYSIS:
 
 Checked value counts:
@@ -75,3 +76,69 @@ Used .groupby().mean() to inspect feature averages by class
 
 <img width="1854" height="226" alt="image" src="https://github.com/user-attachments/assets/c4bde864-7cd9-4502-b389-ab807c05c5d4" />
 
+
+3.Feature-Label Separation:
+
+X = sonar_data.drop(columns=60, axis=1)
+
+Y = sonar_data[60]
+
+X: 60 sonar features
+
+Y: Classification label
+
+<img width="783" height="652" alt="image" src="https://github.com/user-attachments/assets/add452ef-7783-4790-8239-e1657ee573a8" />
+
+
+4.Train-Test Splitting:
+
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.1, stratify=Y, random_state=1)
+
+Training samples: 187
+
+Test samples: 21
+
+Stratification ensures class balance
+
+<img width="865" height="116" alt="image" src="https://github.com/user-attachments/assets/6349aa6c-3512-48ae-9c6f-d2a86cfc765e" />
+
+
+5.Model Training (Logistic Regression):
+
+model = LogisticRegression()
+
+model.fit(X_train, Y_train)
+
+Trained Logistic Regression model using default parameters
+
+
+6.Model Evaluation:
+
+accuracy_score(Y_train, model.predict(X_train))  # ~83.4%
+
+accuracy_score(Y_test, model.predict(X_test))    # ~76.1%
+
+Training accuracy: ~83.42%
+
+Testing accuracy: ~76.19%
+
+<img width="687" height="73" alt="image" src="https://github.com/user-attachments/assets/236e8f3c-1963-4f55-8fb2-784e36e00df1" />
+
+
+7.Making Predictions:
+
+input_data = ( ... )  # Example sonar signal readings
+
+input_data_as_numpy_array = np.asarray(input_data).reshape(1, -1)
+
+prediction = model.predict(input_data_as_numpy_array)
+
+if prediction[0] == 'R':
+
+    print("The object is Rock")
+
+else:
+
+    print("The object is Mine")
+
+<img width="1861" height="331" alt="image" src="https://github.com/user-attachments/assets/f50b55ca-b8e0-43f1-981a-3f199e759292" />
