@@ -50,3 +50,7 @@ Inspected data using .head(), .shape, and .describe()
 Ensured label distribution is approximately balanced
 
 <img width="1485" height="108" alt="image" src="https://github.com/user-attachments/assets/113bad80-39c9-4276-b4b0-b33d9f97e036" />
+
+<img width="364" height="106" alt="image" src="https://github.com/user-attachments/assets/ecce392d-1ed0-4247-8021-3914fdd0d90c" />
+
+<img width="1861" height="373" alt="image" src="https://github.com/user-attachments/assets/8e4d95bc-f066-40a9-b934-a0528005de1b" />
