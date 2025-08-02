@@ -8,6 +8,7 @@ ROCKVSMINE is a supervised machine learning project that classifies underwater o
 
 This project demonstrates the full machine learning pipeline — from data loading and preprocessing to model training, evaluation, and prediction.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 🧠 Technologies & Libraries Used
 
