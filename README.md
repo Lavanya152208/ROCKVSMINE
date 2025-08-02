@@ -1,5 +1,7 @@
 ROCKVSMINE: Sonar Signal Classification using Machine Learning
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 📌 Project Overview
 
 ROCKVSMINE is a supervised machine learning project that classifies underwater objects as either rock or mine based on sonar signal data. The project uses a custom sonar dataset collected from internal or simulated sources. Each data point consists of 60 numerical features representing the intensity of sonar signals reflected from objects. The final model uses Logistic Regression to make predictions and achieves good performance on unseen data.
