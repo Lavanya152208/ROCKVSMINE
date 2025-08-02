@@ -10,7 +10,7 @@ This project demonstrates the full machine learning pipeline — from data loadi
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-🧠 Technologies & Libraries Used
+🧠 Technologies & Libraries Used:
 
 Python
 
@@ -26,7 +26,10 @@ Logistic Regression – ML algorithm used
 
 (Optional: Matplotlib/Seaborn if you plan to visualize)
 
-📁 Dataset Details
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+📁 Dataset Details:
 
 Source: Custom dataset ([Copy of sonar data.csv](https://drive.google.com/file/d/1pQxtljlNVh0DHYg-Ye7dtpDTlFceHVfa/view))
 
@@ -42,7 +45,9 @@ M → Mine
 
 Each row contains sonar signal readings at different frequencies, with the 61st column indicating the object type.
 
-🧪 Project Workflow
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+🧪 Project Workflow:
 
 1.DATA COLLECTION & PREPROCESSING:
 
