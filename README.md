@@ -41,7 +41,7 @@ Each row contains sonar signal readings at different frequencies, with the 61st 
 
 🧪 Project Workflow
 
-1. Data Collection & Preprocessing
+1.DATA COLLECTION & PREPROCESSING:
 
 Loaded CSV using pandas.read_csv()
 
@@ -54,3 +54,16 @@ Ensured label distribution is approximately balanced
 <img width="364" height="106" alt="image" src="https://github.com/user-attachments/assets/ecce392d-1ed0-4247-8021-3914fdd0d90c" />
 
 <img width="1861" height="373" alt="image" src="https://github.com/user-attachments/assets/8e4d95bc-f066-40a9-b934-a0528005de1b" />
+
+2.EXPLORATORY DATA ANALYSIS:
+
+Checked value counts:
+
+Rocks (R) = 97
+
+Mines (M) = 111
+
+Used .groupby().mean() to inspect feature averages by class
+
+<img width="1854" height="226" alt="image" src="https://github.com/user-attachments/assets/c4bde864-7cd9-4502-b389-ab807c05c5d4" />
+
