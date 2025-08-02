@@ -39,3 +39,14 @@ M → Mine
 
 Each row contains sonar signal readings at different frequencies, with the 61st column indicating the object type.
 
+🧪 Project Workflow
+
+1. Data Collection & Preprocessing
+
+Loaded CSV using pandas.read_csv()
+
+Inspected data using .head(), .shape, and .describe()
+
+Ensured label distribution is approximately balanced
+
+<img width="1485" height="108" alt="image" src="https://github.com/user-attachments/assets/113bad80-39c9-4276-b4b0-b33d9f97e036" />
