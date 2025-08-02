@@ -81,9 +81,9 @@ Used .groupby().mean() to inspect feature averages by class
 
 3.Feature-Label Separation:
 
-X = sonar_data.drop(columns=60, axis=1)
+    X = sonar_data.drop(columns=60, axis=1)
 
-Y = sonar_data[60]
+    Y = sonar_data[60]
 
 X: 60 sonar features
 
@@ -95,7 +95,7 @@ Y: Classification label
 
 4.Train-Test Splitting:
 
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.1, stratify=Y, random_state=1)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.1, stratify=Y, random_state=1)
 
 Training samples: 187
 
@@ -109,9 +109,9 @@ Stratification ensures class balance
 
 5.Model Training (Logistic Regression):
 
-model = LogisticRegression()
+    model = LogisticRegression()
 
-model.fit(X_train, Y_train)
+    model.fit(X_train, Y_train)
 
 Trained Logistic Regression model using default parameters
 
@@ -119,9 +119,9 @@ Trained Logistic Regression model using default parameters
 
 6.Model Evaluation:
 
-accuracy_score(Y_train, model.predict(X_train))  # ~83.4%
+    accuracy_score(Y_train, model.predict(X_train))  # ~83.4%
 
-accuracy_score(Y_test, model.predict(X_test))    # ~76.1%
+    accuracy_score(Y_test, model.predict(X_test))    # ~76.1%
 
 Training accuracy: ~83.42%
 
@@ -133,19 +133,19 @@ Testing accuracy: ~76.19%
 
 7.Making Predictions:
 
-input_data = ( ... )  # Example sonar signal readings
+    input_data = ( ... )  # Example sonar signal readings
 
-input_data_as_numpy_array = np.asarray(input_data).reshape(1, -1)
+    input_data_as_numpy_array = np.asarray(input_data).reshape(1, -1)
 
-prediction = model.predict(input_data_as_numpy_array)
+    prediction = model.predict(input_data_as_numpy_array)
 
-if prediction[0] == 'R':
+    if prediction[0] == 'R':
 
-    print("The object is Rock")
+        print("The object is Rock")
 
-else:
+    else:
 
-    print("The object is Mine")
+        print("The object is Mine")
 
 <img width="1861" height="331" alt="image" src="https://github.com/user-attachments/assets/f50b55ca-b8e0-43f1-981a-3f199e759292" />
 
